@@ -16,4 +16,12 @@ class UserController extends Controller
         dump($profile);
     }
 
+    public function getPost()
+    {
+        $user = User::find(7);
+        $post = $user->posts;
+
+        dump($post);
+    }
+
 }

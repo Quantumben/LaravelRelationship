@@ -15,3 +15,5 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/getUser', [\App\Http\Controllers\UserController::class, 'getUser']);
+Route::get('/getPost', [\App\Http\Controllers\UserController::class, 'getPost']);
+

@@ -41,4 +41,10 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    //One to One Relationship
+    public function profile()
+    {
+        return $this->hasOne('App\Models\Profile');
+    }
 }
